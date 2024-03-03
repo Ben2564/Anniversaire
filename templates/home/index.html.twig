@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Index Anniversaire!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Mes dates d'anniversaire</h1>
+    <p>Cette application permet de se rappeler des dates d'anniversaire des gens. On peut ajouter, modifier, supprimer et afficher les dates d'anniversaire à venir dans les 40 jours qui viennent.</p>
+    <a class="button" href="{{ path('creer_Compte') }}">Créer un compte</a>
+    <a class="button" href="{{ path('se_Connecter') }}">Se connecter</a>
+</div>
+{% endblock %}

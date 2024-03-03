@@ -1,0 +1,4 @@
+<form method="post" action="{{ path('app_anniversaire_delete', {'id': anniversaire.id}) }}" onsubmit="return confirm('Etes-vous sur de supprimer se rappel d\'anniversaire ? ');">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ anniversaire.id) }}">
+    <button  class="button2" class="btn">Delete</button>
+</form>
